@@ -1,0 +1,399 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine|PT+Sans+Narrow|Satisfy|Permanent+Marker" rel="stylesheet"> 
+   
+    
+<style>
+
+    #topmessage{
+        padding-bottom: 5px;
+       
+    }
+    
+    
+    #contactdetails{
+        background-color: #092044;
+        padding: 5px;
+        margin-left: 25px;
+    }
+    
+    #contactdetails a{
+        text-decoration: none;
+        color: white;
+        padding-right: 5px;
+    }
+    
+    .navbar-inverse{
+        background-color: ghostwhite;
+    }
+    
+    
+    .navbar{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-color: floralwhite;
+        
+    }
+    
+   /* nav>navbar>navbar-nav>li{
+        color: white;
+        
+    }*/
+    
+    
+    
+    .navbar-inverse .navbar-nav > li > a{
+        color: black;
+        font-size: 18px;
+        padding-top: 30px;
+        transition: border-bottom 0.2s ease-out;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover{
+        color: #0f4499;
+        font-size: 18px;
+        border-bottom: 5px solid #0f4499;
+    }
+    
+    .brandname{
+       font-family: Tangerine;
+        font-size: 60px;
+    }
+    
+    .navbar-inverse .brandname{
+         color: #041530;
+    
+    }
+    
+    .navbar-inverse .brandname:hover, .navbar-inverse .brandname:focus{
+        color: #041530;
+    }
+    
+     
+    
+    
+    .navbar-brand>.brandimage>img{
+        padding-top: none;
+        height: 100px;
+        padding-bottom: 10px;
+        margin-top: -30px;
+    }
+    
+    
+    
+    #slider{
+        margin-top: -25px;
+        margin-left: -25px;
+        margin-right: -25px;
+}
+   
+    
+    #intro{
+        font-size: 19px;
+        padding: 50px;
+        font-family: PT Sans Narrow;
+    }
+    
+    #intro>ol{
+        padding-left: 12px;
+    }
+    
+    #services{
+    padding-top: 50px;    
+    }
+    
+    .serviceicon{
+        float: left;
+        padding-top: 10px;
+        font-size: 40px;
+        padding-right: 10px;
+    }
+    
+    .serviceitem{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: 1px solid lightgray;
+       padding-left: 5px;
+        
+        border-top-color: darkorange;
+        border-top-width: 5px; 
+        box-shadow: 2px 2px 5px lightgray;
+        transition: background-color 1s;
+        margin-right: 10px;
+        
+    }
+    
+     .serviceitem:active,  .serviceitem:focus,  .serviceitem:hover{
+         background-color: darkorange;
+         color: white;
+    
+    }
+    
+   
+    .servicedetail{
+    padding-left: 15px;
+        
+    }
+    
+    
+    .servicedetail h6{
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+
+    
+    #banner{
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        background-position: center;
+/*        background-size: cover;*/
+        min-height: 450px;
+        background-image: url(child.jpeg);
+        background-attachment: fixed;
+        padding-bottom: 100px;
+    }
+    
+    
+    #banner h2{
+        font-family: Permanent Marker;
+        font-size: 45px;
+        color: white;
+        text-shadow: 0.5px 0.5px 2px dimgray;
+    }
+    
+    #banner p{
+        font-family: Satisfy;
+        font-size: 35px;
+/*        font-style: italic;*/
+        color:white;
+        text-shadow: 1px 1px 5px darkgray;
+    }
+    
+    
+    #footer{
+        background-color: #010c1e;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    .footeroptions{
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .footertitle{
+        color:floralwhite;
+        font-size: 25px;
+       text-shadow: 1px 1px 2px dimgray;
+        padding-bottom: 50px;
+        border-bottom: 1px solid dimgray;
+       
+    }
+    
+    .footerintro{
+        color: gainsboro;
+    }
+    
+    .footeroptions>li{
+        color: gainsboro;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+    .footeroptions>li>a{
+        text-decoration: none;
+        color:gainsboro;
+    }
+    
+    .footeroptions>li>a:hover,  .footeroptions>li>a:focus{
+        color: white;
+        text-shadow: 0.5px 0.5px 1px #333;
+    }
+    
+    .footeroptions>li>i{
+        padding-right: 10px;
+    }
+    
+    </style>
+        
+    
+</head>
+
+<body>
+<div id=" topmessage" class="container-fluid">
+<marquee style="color: darkorange">Look At Me! I am A floating Notification. Dear Parents, Don't Pay Attention To Me Please Continue Whatever You Came Here For.</marquee>
+</div>
+<div id="contactdetails" class="container-fluid">
+<ul class="list-inline">
+<li><a href="#">PHOTO GALLERY</a></li>
+<li><a href="#">ONLINE REGISTRATION</a></li>
+<li style="float: right"><a href="#"><span class="glyphicon glyphicon-earphone"></span> 9876543210</a></li>
+<li style="float: right"><a href="#"><span class="glyphicon glyphicon-envelope"></span> info@xaviersschool.com</a></li>
+<li style="float: right"><a href="#"><span class="glyphicon glyphicon-lock"></span> LOGIN</a></li>
+</ul>
+	
+</div>
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+    <a class="navbar-brand" href="#"><span class="brandimage"><img src="sclogo.png" alt="school_logo"></span></a><span class="brandname">Xavier's School</span>
+</div>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT<span class="caret"></span></a></li>
+<li><a href="#">ADMISSIONS<span class="caret"></span></a></li>
+<li><a href="#">STUDENT LIFE<span class="caret"></span></a></li>
+<li><a href="#">TRANSPORT</a></li>
+<li><a href="#">CONTACT US</a></li>
+</ul>
+</div>
+</nav>
+
+    
+<div id="slider" class="container-fluid">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="01.jpg" alt="Classroom" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="02.jpg" alt="Playground" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="03.jpg" alt="Infrastructure" style="width:100%;">
+      </div>
+    </div>    
+    </div>
+</div>
+
+<div id="intro" class="container-fluid">
+    <p>
+    Welcome to the St.Xavier's School website.  I hope you find the information helpful and that it gives you a taste of the happy, industrious school that we are.  St.Xavier's is a caring school, with a team of dedicated professionals which is here to ensure that the children get the most from their education.  Every member of staff is committed to providing the children with a happy, well- disciplined environment where the children can make the most of every learning opportunity offered to them. </p>
+    <p>
+We aim to be a school where all the children are inspired to see learning as a lifelong experience, thus empowering them to make good choices later in life.  The school promotes the best possible academic, cultural and moral values in a Christian environment.  All our Children, regardless of background, culture, religious belief of ability, are equally valued, supported and challenged.
+    </p><br>
+<ol>
+    <li>High Academic Achievement</li>
+
+    <li>Effective Standards-Based Instruction</li>
+
+    <li>Fiscally Solvent and Increase Enrollment</li>
+
+    <li>Accountability for all Stakeholders</li>
+
+    <li>Safety and Security of Students and Staff</li>
+    </ol>
+    
+
+<div id="services" class="row">
+<div class="col-md-4">
+<div class="serviceitem">
+<div class="serviceicon">
+<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+    </div>
+<div class="servicedetail">
+<h6>ADMISSION ENQUIRY</h6>
+<div><p class="text-muted">
+Click here to make enquiry for admission.
+</p></div>
+</div>
+    </div></div>
+
+    
+
+
+    
+    
+<div class="col-md-4">
+<div class="serviceitem">
+<div class="serviceicon">
+<i class="fa fa-bullseye" aria-hidden="true"></i>
+    </div>
+<div class="servicedetail">
+<h6>OUR APPROACH</h6>
+<div><p class="text-muted">
+We encourage experiential learning.
+</p></div>
+</div>
+</div></div>
+<div class="col-md-4">
+<div class="serviceitem">
+<div class="serviceicon">
+<i class="fa fa-paper-plane" aria-hidden="true"></i>
+    </div>
+<div class="servicedetail">
+<h6>OUR BRANCHES</h6>
+<div><p class="text-muted">
+Click here to check opur other branches.
+</p></div>
+</div>
+</div></div>
+</div>    
+        
+</div>
+    
+
+<div id="banner" class="container-fluid">
+    <h2 class="text-center">"Children must be taught HOW TO THINK, not WHAT TO THINK"</h2>
+    <br><br>
+<p class="text-center">Margaret Mead</p>
+</div>
+
+    
+<div id="footer" class="container-fluid">
+<div class="row">
+<div class="col-md-4">
+<img src="sclogo.png" alt="school_logo" height=80px width=80px>
+<br><br>
+<p class="footerintro">
+We provide high quality, student-centered education and lifelong learning opportunities for the communities we serve.
+</p>
+<p class="text-muted">&copy;Copyright St. Xavier`s High School, 
+<br>All Rights Reserved</p>
+</div>
+    
+<div class="col-md-2">
+<h4 class="footertitle">Sitemap</h4>
+<ul class="footeroptions">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Admissions</a></li>
+<li><a href="#">Transport</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>    
+
+<div class="col-md-2">
+<h4 class="footertitle">Quicklinks</h4>
+<ul class="footeroptions">
+<li><a href="#">Photo Gallery</a></li>
+<li><a href="#">Online Registration</a></li>
+    </ul>
+    </div>
+
+<div class="col-md-4">
+<h4 class="footertitle">Contact Us</h4>
+<ul class="footeroptions">
+<li><i class="fa fa-map-marker" aria-hidden="true"></i>Rosewood city, Sector-149, Extension Road, Neverland.</li>
+<li><i class="fa fa-mobile" aria-hidden="true"></i>91-987654321</li>
+<li><i class="fa fa-envelope" aria-hidden="true"></i>info@xaviersschool.com</li>
+</ul>
+</div>    
+
+
+</div>
+</div>    
+    
+
+</body>
+
+</html>
